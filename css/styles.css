@@ -1,0 +1,41 @@
+* margin: {
+  box-sizing:border-box;
+}
+
+body {
+  line-height: 1.5;
+  background: #990000;
+}
+
+#wrap {
+  height: inherit;
+  margin: 0 10%;
+  background: #ffffff;
+  padding: 5% 10% 80% 10% ;
+}
+
+div.questions{
+  display: none;
+}
+
+h3 {
+  position: static;
+  float: right;
+}
+
+#start {
+  border: 1em;
+}
+
+#submit {
+  display: none;
+  border: 1em;
+  margin-top: 1em;
+}
+
+input {
+  display: inline;
+}
+div .abc {
+  display: inline-table;
+}
