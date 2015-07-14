@@ -4,23 +4,41 @@
 
 body {
   line-height: 1.5;
-  background: #990000;
+  background: #dcdcdc;
+  background-image: url("../images/hoffman.png");
 }
 
 #wrap {
   height: inherit;
-  margin: 0 10%;
+  margin: 0px 10%;
   background: #ffffff;
-  padding: 5% 10% 80% 10% ;
+  padding: .1% 10% 30% 10% ;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 0px 5px #FF8542;
+  border-radius: 12em;
+
 }
 
-div.questions{
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 5em;
+}
+
+/**div.questions{
   display: none;
+}**/
+
+div.xx{
+  display: none
 }
 
 h3 {
-  position: static;
+  position: fixed;
   float: right;
+  background-color: #dddddd;
+  padding: .5em 1em .5em 1em;
+  margin-left: 50%;
+  margin-right: 70%;
 }
 
 #start {
@@ -28,7 +46,13 @@ h3 {
 }
 
 #submit {
-  display: none;
+  display: block;
+  border: 1em;
+  margin-top: 1em;
+}
+
+#next {
+  display: block;
   border: 1em;
   margin-top: 1em;
 }
@@ -38,4 +62,12 @@ input {
 }
 div .abc {
   display: inline-table;
+}
+
+div .right{
+  display: none;
+}
+
+div .wrong{
+  display: none;
 }
