@@ -29,6 +29,7 @@ if(seconds <= 10){
 
 startButton.on("click", function(){
   timer = setInterval(updateTime, 1000);
+  $("h2").css("display", "none")
   $(".q1.xx").css( "display", "block" );
   $("#start").css("display", "none");
 });
