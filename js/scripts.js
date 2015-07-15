@@ -7,9 +7,9 @@ var numberQs = $(".questions").children().length;
 var next = $("#next");
 score = 0;
 
-//
 var timer;
-seconds = 60;
+seconds = 25;
+
 startButton.on("click", function(){
   timer = setInterval(updateTime, 1000);
 })
@@ -23,16 +23,11 @@ if(seconds === 0){
   $("#timer").css("display", "none")
 }
 }
-//
 
 startButton.on("click", function(){
   $(".q1.xx").css( "display", "block" );
   $("#start").css("display", "none");
 });
-
-// startButton.on("click", function(){
-//   $("#start").css("display", "none");
-// });
 
 $(".next").on("click", function(){
   var form = $(this).parent();
@@ -47,6 +42,8 @@ $("div .next").on("click", function(){
 $("#finish.finish10").on("click", function(){
   $("div .q10").css("display", "none")
   $("h2").css("display", "none")
+  clearInterval(timer)
+  $("#timer").css("display", "none")
 })
 
 var checkAnswer = function() {
@@ -61,7 +58,7 @@ var checkAnswer = function() {
     //   alert('Sorry...');
       score--
     }
-    $(".score").html(score)
+    $(".score").html("Score:" + " " + score)
 };
 
 submitButton.on("click", checkAnswer);
